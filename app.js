@@ -1,4 +1,3 @@
-import {TeamInfoService} from './services/teamInfoService.js';
 
 	angular
 		.module('app',['ui.router'])
