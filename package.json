@@ -1,0 +1,23 @@
+{
+  "name": "employeeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -a localhost -p 8000 -c-1",
+    "build" : "webpack app.js dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@uirouter/angularjs": "latest",
+    "angular": "latest",
+    "grunt": "latest",
+    "grunt-serve": "latest",
+    "http-server": "latest",
+    "jquery": "latest",
+    "less": "^3.0.0-alpha.3",
+    "webpack": "^3.8.1"
+  }
+}

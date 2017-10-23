@@ -1,0 +1,43 @@
+
+<div class="modal">
+	<div class="modal-body">
+		<form action="" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+			<section>
+				<fieldset>
+					<legend>Select an Employee</legend>
+					<div>
+						<input type="checkbox" name="sendEmailFlag" ng-model="sendEmailFlag">
+						Send welcome email to employee <br>
+					</div>
+
+					<div>
+						<label for="team">Select a Team in the Organization</label> <br>
+						<div class="teamBlock">
+							<input type="text" placeholder="Select Team...">
+							<ul class="dropdownOptions">
+								<li ng-repeat="data in home.teamsData">{{data.team}}</li>
+							</ul>
+						</div>
+						<input type="text" placeholder="Select Employee...">
+						<select name="team" id="team" ng-model="team">
+							<!-- <option value="" selected="selected">Select Team...</option> -->
+							<option ng-repeat="data in home.teamsData " value={{data.team}}>{{data.team}}</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="team">Select an Employee</label> <br>
+						<select name="employee" id="employee" ng-model="employee">
+							<option value="" selected="selected">Select Employee...</option>
+							<option ng-repeat="employeeName in home.employees " value={{employeeName}}>{{employeeName}}</option>
+						</select>
+					</div>
+				</fieldset>	
+			</section>
+			<button type="button" ng-click="home.closeModal('custom-modal')">Cancel</button>
+			<button type="submit" class="btn btn-primary">OK</button>		
+		</form>
+	</div>
+</div>
+
+<div class="modal-background"></div>

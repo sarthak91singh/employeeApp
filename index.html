@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Employee App</title>
+	<!-- application less -->
+    <link href="content/modal.less" rel="stylesheet/less" type="text/css" />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <script src="node_modules/less/dist/less.min.js"></script>
+</head>
+<body ng-app="app">
+	<div class="main-div">
+		<nav>
+			<a ui-sref="home">Home</a>
+		</nav>
+		<ui-view></ui-view>	
+	</div>
+
+	<!-- jquery -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+	<!-- bootstrap -->
+	<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+	<!-- angular -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js" ></script>
+
+	<!-- app -->
+	<script src="app.js"></script>
+	<script src="services/modalService.js"></script>
+	<script src="services/teamInfoService.js"></script>
+	<script src="directives/modalDirective.js"></script>
+	<script src="controllers/homeCtrl.js"></script>	
+	
+</body>
+</html>

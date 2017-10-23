@@ -1,0 +1,1 @@
+This project will facilitate searching for an employee's details from it's team. The main feature of this project is it builds it's own custom datalist html type component.
